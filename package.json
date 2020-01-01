@@ -1,0 +1,40 @@
+{
+  "name": "@yukippe/react-mark-input",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/AutoMarkInput --out-dir lib",
+    "serve": "cross-env MODE=development webpack-dev-server",
+    "watch": "cross-env MODE=development webpack --watch",
+    "webpack:dev": "cross-env MODE=development webpack",
+    "webpack:prod": "cross-env MODE=production webpack",
+    "webpack": "npm-run-all webpack:prod",
+    "fmt": "prettier --write \"**/*.{js,jsx,json}\""
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/polyfill": "7.2.5",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "8.0.5",
+    "cross-env": "5.2.0",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.4",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.16.4",
+    "react": "16.8.2",
+    "react-dom": "16.8.2",
+    "webpack": "4.29.4",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "3.1.14"
+  },
+  "dependencies": {
+    "proptypes": "1.1.0",
+    "styled-components": "4.1.3"
+  }
+}
